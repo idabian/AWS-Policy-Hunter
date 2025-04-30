@@ -4,18 +4,31 @@
 ## Overview
 AWS Policy Hunter collects identity and permission data from AWS accounts, stores it as a graph in Neo4j, and analyzes relationships, policies, and misconfigurations to identify potential risks like privilege escalation, wildcard permissions, and trust policy flaws.
 
-## Requirements
-Make sure to use `pip` to install both `boto3` and `neo4j` libraries.
-
-## Usage
-TODO
-
 ## Features
 - **Multiple identity types:** including users, groups, roles, instance profiles and accounts
 - **Many relathionships:** including group memberships, role trusts, user access keys and more
 - **IAM Policy analysis:** to detect dangerous policies that may result privilege escalation
 - **Risk scoring:** is utilized to assess the risk of users, groups, roles and policies to the organization
 - **Multi-account support:** allows for broader view of cross-account relationships in the organization
+
+## Requirements
+Make sure to use `pip` to install both `boto3` and `neo4j` libraries.
+
+## Usage
+### Setup AWS Profile
+Set the `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables or set the `AWS_PROFILE` variable based on a profile in the `.aws/credentials` file.
+#### Using Bash:
+```bash
+export AWS_PROFILE=<profile-name>
+```
+#### Using CMD:
+```bash
+set AWS_PROFILE=<profile-name>
+```
+#### Using PowerShell:
+```powershell
+$env:AWS_PROFILE = "<profile-name>"
+```
 
 ## Graph Components
 For those who wish to create their own custom cypher queries, here are the nodes and relationships used in the graph.
@@ -31,6 +44,7 @@ For those who wish to create their own custom cypher queries, here are the nodes
 - Instance Profile
 - AccessKey
 - Global
+
 ### Relationships
 - **MemberOf:** shows a membership relationship between a user and a group
 - **HasAccessKey:** shows the access key used by a specific user
