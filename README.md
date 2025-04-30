@@ -11,7 +11,11 @@ Make sure to use `pip` to install both `boto3` and `neo4j` libraries.
 TODO
 
 ## Features
-TODO
+- Multiple identity types including users, groups, roles, instance profiles and accounts
+- Many relathionships including group memberships, role trusts, user access keys and more
+- IAM Policy analysis to detect dangerous policies that may result privilege escalation
+- Risk scoring is utilized to assess the risk of users, groups, roles and policies to the organization
+- Multi-account support allows for broader view of cross-account relationships in the organization
 
 ## Graph Components
 TODO
