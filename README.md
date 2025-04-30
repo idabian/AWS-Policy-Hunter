@@ -18,13 +18,14 @@ TODO
 - **Multi-account support:** allows for broader view of cross-account relationships in the organization
 
 ## Graph Components
+For those who wish to create their own custom cypher queries, here are the nodes and relationships used in the graph.
 ### Nodes
 - Account
 - Policy
 - User
 - Group
 - Role
-- DeferatedIdentity
+- FederatedIdentity
 - Service
 - EC2Instance
 - Instance Profile
