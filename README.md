@@ -17,7 +17,7 @@ TODO
 TODO
 
 ## Disclaimer
-This tool is intended **solely for use on AWS accounts that you own or have explicit permission to test**. Unauthorized access or scanning of accounts without consent is illegal and strictly prohibited.
+This tool is intended **solely for use on AWS accounts that you own or have explicit permission to test**. Unauthorized access or scanning of accounts without consent is illegal and strictly prohibited. <br>
 By using this tool, you agree to comply with all relevant laws and your organization's security policies. The authors are not responsible for misuse or any damage caused by this tool.
 
 ## License
