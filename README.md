@@ -21,5 +21,5 @@ This tool is intended **solely for use on AWS accounts that you own or have expl
 By using this tool, you agree to comply with all relevant laws and your organization's security policies. The authors are not responsible for misuse or any damage caused by this tool.
 
 ## License
-MIT License
+MIT License <br>
 Author: Idabian
